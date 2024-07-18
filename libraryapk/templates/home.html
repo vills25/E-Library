@@ -1,95 +1,147 @@
 {% extends 'base.html' %}
 
 {% block content %}
+{% load static %}
 
 <!-- Bootstrap CSS -->
 <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">E-Library</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Books</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Authors</a>
-        </li>
-      </ul>
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
-        </li>
-      </ul>
-    </div>
-</nav>
+<div class="container">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">E-Library</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Books</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Authors</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-<!-- Jumbotron -->
-<div class="jumbotron">
-    <h1 class="display-4">Welcome to E-Library!</h1>
-    <p class="lead">Aap yaha par books browse kar sakte hain, author search kar sakte hain aur zyada kuch explore kar sakte hain.</p>
-    <hr class="my-4">
-    <p>Start exploring now.</p>
-    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-</div>
+    <!-- Jumbotron -->
+    <div class="jumbotron">
+        <h1 class="display-4">Welcome to E-Library!</h1>
+        <p class="lead">"Welcome to our e-library, where you'll find a treasure trove of knowledge awaiting your discovery! Explore endless books on every subject imaginable."    </p>
+        <hr class="my-4">
+        <p>Start exploring now.</p>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    </div>
 
-<!-- Cards -->
-<div class="row">
-    <div class="col-sm-6 col-md-4 mb-3">
-        <div class="card">
-            <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Card title 1</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    <!-- Cards -->
+    <div class="row">
+        <div class="col-sm-6 col-md-4 mb-3">
+            <div class="card">
+                <img src="{% static 'images/1.jpg' %}" class="card-img-top img-fluid" alt="Image 1">
+                <div class="card-body">
+                    <h5 class="card-title">THE DHONI TOUCH</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 mb-3">
+            <div class="card">
+                <img src="{% static 'images/2.jpg' %}" class="card-img-top img-fluid" alt="Image 2">
+                <div class="card-body">
+                    <h5 class="card-title">Energize your Mind</h5>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                </div> 
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 mb-3">
+            <div class="card">
+                <img src="{% static 'images/3.jpg' %}" class="card-img-top img-fluid" alt="Image 3">
+                <div class="card-body">
+                    <h5 class="card-title">THINK STRAIGTH</h5>
+                    <p class="card-text">"You don't regret what you did in life, you  regret what you didn't do."</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 mb-3">
+            <div class="card">
+                <img src="{% static 'images/4.jpg' %}" class="card-img-top img-fluid" alt="Image 4">
+                <div class="card-body">
+                    <h5 class="card-title">THE HIDDEN HINDU</h5>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 mb-3">
+            <div class="card">
+                <img src="{% static 'images/5.jpg' %}" class="card-img-top img-fluid" alt="Image 5">
+                <div class="card-body">
+                    <h5 class="card-title">WHY BHARAT MATTERS</h5>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 mb-3">
+            <div class="card">
+                <img src="{% static 'images/6.jpg' %}" class="card-img-top img-fluid" alt="Image 6">
+                <div class="card-body">
+                    <h5 class="card-title">Mindset</h5>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                </div>
             </div>
         </div>
     </div>
-    <div class="col-sm-6 col-md-4 mb-3">
-        <div class="card">
-            <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Card title 2</h5>
-                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-3 border-start border-3 border-success ps-4" id="loginModalLabel">Login</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-2">
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="email" placeholder="Enter Email">
+                                <label for="email">Enter Email</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <input type="password" class="form-control" id="pass" placeholder="Enter Password">
+                                <label for="pass">Enter Password</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success">Login</button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
             </div>
         </div>
     </div>
-    <div class="col-sm-6 col-md-4 mb-3">
-        <div class="card">
-            <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Card title 3</h5>
-                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-            </div>
-        </div>
-    </div>
-    <div class="col-sm-6 col-md-4 mb-3">
-        <div class="card">
-            <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Card title 2</h5>
-                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-            </div>
-        </div>
-    </div>
-    <div class="col-sm-6 col-md-4 mb-3">
-        <div class="card">
-            <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Card title 2</h5>
-                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-            </div>
-        </div>
-    </div>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </div>
 
 <!-- Bootstrap JS, Popper.js, and jQuery -->
