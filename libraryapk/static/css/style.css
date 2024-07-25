@@ -21,11 +21,22 @@ body {
     color: rgb(0, 0, 0);
 }
 
+.row{
+    margin: 0;
+}
+
 .card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
     text-align: center;
+    overflow: hidden;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     transition: transform 0.2s ease-in-out;
 }
+
+.card-body {
+    padding: 15px;
+  }
 
 .card:hover {
     transform: scale(1.05);
@@ -33,9 +44,25 @@ body {
 
 .card-img-top {
     height: 200px;
-    width: 100%;
     object-fit: cover;
     
+}
+
+.btn-close-custom {
+    background: none;
+    border: 1px solid #ccc;
+    border-radius: 0%;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-close-custom i {
+    font-size: 1.5rem;
+    color: #333;
+}
+.btn-close-custom:hover {
+    background-color: #f2f2f2;
 }
 
 .navbar {
@@ -51,3 +78,18 @@ body {
 .navbar .nav-link:hover {
     color: #8193a5 !important;
 }
+
+.social-btn {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.social-btn i {
+    margin-right: 10px;
+}
+
+.social-login{
+    width: 100%;
+    align-items: center;
+
+}
+
