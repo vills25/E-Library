@@ -1,95 +1,114 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background-color: #8193a5;
+  background-color: #8193a5;
 }
 
 .jumbotron {
-    text-align: center;
-    margin-top: 30px;
-    background-color: #1e3169;
-    padding: 2rem 1rem;
-    margin-bottom: 2rem;
-    border-radius: 0.3rem;
+  text-align: center;
+  margin-top: 30px;
+  background-color: #1e3169;
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+  border-radius: 0.3rem;
 }
 
 .jumbotron h1 {
-    padding: 10px;
-    color: rgb(0, 0, 0);
+  padding: 10px;
+  color: rgb(0, 0, 0);
 }
 
-.row{
-    margin: 0;
+.row {
+  margin: 0;
 }
 
 .card {
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    text-align: center;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    transition: transform 0.2s ease-in-out;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
 }
 
 .card-body {
-    padding: 15px;
-  }
+  padding: 15px;
+}
 
 .card:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .card-img-top {
-    height: 200px;
-    object-fit: cover;
-    
+  height: 200px;
+  object-fit: cover;
+}
+
+/* .like-button span {
+      transition: color 0.3s;
+    }
+    .liked span {
+      color: red;
+    } */
+
+.like-button {
+  transition: background-color 0.3s, color 0.3s;
+  border: 1px solid #ced4da;
+}
+.like-button:hover {
+  background-color: red;
+  color: white;
+  border-color: red;
+}
+.liked {
+  background-color: red;
+  color: white;
+  border-color: red;
 }
 
 .btn-close-custom {
-    background: none;
-    border: 1px solid #ccc;
-    border-radius: 0%;
-    padding: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background: none;
+  border: 1px solid #ccc;
+  border-radius: 0%;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .btn-close-custom i {
-    font-size: 1.5rem;
-    color: #333;
+  font-size: 1.5rem;
+  color: #333;
 }
 .btn-close-custom:hover {
-    background-color: #f2f2f2;
+  background-color: #f2f2f2;
 }
 
 .navbar {
-    margin: 0;
-    padding: 0;
-    background-color: #586877;
+  margin: 0;
+  padding: 0;
+  background-color: #586877;
 }
 
 .navbar .nav-link {
-    color: rgb(0, 0, 0) !important;
+  color: rgb(0, 0, 0) !important;
 }
 
 .navbar .nav-link:hover {
-    color: #8193a5 !important;
+  color: #8193a5 !important;
 }
 
 .social-btn {
-    width: 100%;
-    margin-bottom: 10px;
+  width: 100%;
+  margin-bottom: 10px;
 }
 .social-btn i {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
-.social-login{
-    width: 100%;
-    align-items: center;
-
+.social-login {
+  width: 100%;
+  align-items: center;
 }
-
