@@ -47,28 +47,6 @@ body {
   object-fit: cover;
 }
 
-/* .like-button span {
-      transition: color 0.3s;
-    }
-    .liked span {
-      color: red;
-    } */
-
-.like-button {
-  transition: background-color 0.3s, color 0.3s;
-  border: 1px solid #ced4da;
-}
-.like-button:hover {
-  background-color: red;
-  color: white;
-  border-color: red;
-}
-.liked {
-  background-color: red;
-  color: white;
-  border-color: red;
-}
-
 .btn-close-custom {
   background: none;
   border: 1px solid #ccc;
